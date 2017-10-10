@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     if df.size:
         print("Success!")
-    query = 'SELECT sum(credit), sum(debit) from demooo'  # calculates the sum
+    query = 'SELECT sum(credit) as credit, sum(debit) as debit from demooo'  # calculates the sum
     for chunks in pd.read_sql(query, engine, chunksize=1000):  # reads data in chunks of 1000 rows
-        print(chunks)  # prints the sum
-
+        df2 = chunks
+    print(df2)  # prints the sum
