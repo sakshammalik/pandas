@@ -32,9 +32,9 @@ if __name__ == "__main__":
     df['zeta order id'] = df['zeta order id'].apply(str)
     df['from / to party'] = df['from / to party'].apply(str)
     df2 = df2.fillna(1)
-    print(df.get_value(122,'lender') == df2.get_value(122,'lender'))
-    print(type(df.get_value(122,'lender')))
-    print(type(df2.get_value(122, 'lender')))
+    #print(df.get_value(122,'lender') == df2.get_value(122,'lender'))
+    #print(type(df.get_value(122,'lender')))
+    #print(type(df2.get_value(122, 'lender')))
     l = []
     l2 = []
     for i in range(0, 6399):
